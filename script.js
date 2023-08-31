@@ -16,7 +16,7 @@ function onSubmit(e) {
 		return;
 	}
 	else {
-		alert(`Oh sorry ${name.value}. you aren't old enough.`);
+		alert(`Oh sorry ${name.value}. You aren't old enough.`);
 	}
 }
 btn.addEventListener("click" , onSubmit);
