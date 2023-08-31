@@ -8,12 +8,15 @@ function onSubmit(e) {
 	if(name.value==="" || age.value==="") {
 		return;
 	}
+	let promise = new Promise((resolve,reject)=> {
+		
+	})
 	if(age.value > 18) {
-		alert(`Welcome, ${name.innerText}. You can vote.`);
+		alert(`Welcome, ${name.value}. You can vote.`);
 		return;
 	}
 	else {
-		alert(`Oh sorry ${name.innerText}. you aren't old enough.`);
+		alert(`Oh sorry ${name.value}. you aren't old enough.`);
 	}
 }
 btn.addEventListener("click" , onSubmit);
